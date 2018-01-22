@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "A good enough starter kit for a React project, I guess.",
   "main": "index.js",
+  "proxy": "http://localhost:3000/",
   "scripts": {
-    "start": "webpack-dev-server && npm run start-server",
+    "start": "webpack-dev-server && nodemon server.js",
     "start-server": "nodemon server.js",
-    "build": "webpack.js",
+    "build": "webpack",
     "test": "jest"
   },
   "repository": {

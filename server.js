@@ -4,10 +4,10 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 app.set('port', process.env.PORT || 3000);
-app.use(express.static(path.resolve(__dirname, '/')));
+app.use(express.static(__dirname + '/'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.locals.title = 'Drinks';
+app.locals.title = 'WEATHRLY';
 
 const requireHTTPS = (request, response, next) => {
   if (request.header('x-forwarded-proto') !== 'https') {
@@ -20,12 +20,11 @@ if (process.env.NODE_ENV === 'production') {
   app.use(requireHTTPS);
 }
 
-app.get('/', (req, res) =>
-  res.sendFile(
-    path.resolve(__dirname, './index.html'
-    )
+app.get('/', function(request, response) {
+  response.sendFile (
+    path.resolve(__dirname, './index.html')
   );
-);
+});
 
 app.listen(app.get('port'), () => {
   //eslint-disable-next-line
