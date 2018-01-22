@@ -1,6 +1,4 @@
 {
   "root": "./server.js",
-  "routes": {
-    "/**": "index.html"
-  }
+  "routes": "index.html"
 }
