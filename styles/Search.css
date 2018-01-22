@@ -3,12 +3,12 @@
   width: 400px;
   height: 30px;
   border: none;
-  padding-left: 100px;
   opacity: 0.9;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  text-align: center;
 }
+
 .search-bar:focus {
   outline-color: #52d6e5;
   outline-width: 8px;
@@ -17,13 +17,12 @@
 ::-webkit-input-placeholder {
   color: #000;
 }
+
 .search-btn {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 30px auto 0px;
   height: 30px;
   width: 150px;
-  margin-top: 30px;
   border-radius: 100px;
   border: none;
   opacity: 0.9;
@@ -51,7 +50,7 @@
   color: #000;
   overflow: scroll;
   height: 100px;
-  width: 500px;
+  width: 400px;
   padding: 0;
   display: block;
   background-color: #000;

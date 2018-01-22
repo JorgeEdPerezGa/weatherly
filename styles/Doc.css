@@ -4,6 +4,7 @@
 @import 'Tenhour.css';
 @import 'Welcome.css';
 @import 'App.css';
+@import 'HourlyCard.css';
 
 html {
   height: 100%;
