@@ -24,6 +24,10 @@ h1 {
 .welcome-container {
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .background-video  {
@@ -35,11 +39,10 @@ h1 {
   -webkit-animation-iteration-count: 5;
   -webkit-animation-timing-function: cubic-bezier(1, 0, 2, .2);
   -webkit-animation-duration: .2s;
+  position: relative;
 }
 
 .input-container {
   z-index: 1;
   position: absolute;
-  top: 260px;
-  left: 330px;
 }

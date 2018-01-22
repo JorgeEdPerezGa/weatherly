@@ -1,19 +1,21 @@
 .body-visible {
   display: flex;
+  height: 100%;
+  width: 100%;
 }
 
 .body-hidden {
   display: none;
 }
 
-@media (max-width: 900px) {
-  .body-visible {
-    flex-direction: column;
-  }
-}
-
 .app-container {
   height: 100%;
   width: 100%;
   margin: 0;
+}
+
+@media (max-width: 900px) {
+  .body-visible {
+    flex-direction: column;
+  }
 }
