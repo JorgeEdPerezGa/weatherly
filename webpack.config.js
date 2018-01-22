@@ -1,3 +1,5 @@
+var webpack = require('webpack');
+
 module.exports = {
   devtool: '#source-map',
   entry: __dirname + '/lib/index.js',
@@ -26,4 +28,10 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx', '.json', '.scss', '.css'],
   },
+  "target": "node",
+  plugins: [
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify('development')
+        })
+    ]
 };
