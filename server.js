@@ -6,11 +6,6 @@ const fs = require('fs');
 
 require('dotenv').config();
 
-var db = require('db')
-db.connect({
-  apiKey: process.env.API_KEY
-})
-
 app.set('port', process.env.PORT || 3000);
 app.use(express.static(__dirname + '/'));
 app.use(bodyParser.json());
