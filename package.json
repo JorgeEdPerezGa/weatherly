@@ -4,7 +4,7 @@
   "description": "A good enough starter kit for a React project, I guess.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server start-server",
+    "start": "webpack-dev-server && npm run start-server",
     "start-server": "nodemon server.js",
     "build": "webpack.js",
     "test": "jest"
