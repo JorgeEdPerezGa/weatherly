@@ -1,6 +1,5 @@
 .body-visible {
-  display: flex;
-  /*height: 100%;*/
+  display: flex;  
   width: 100%;
 }
 

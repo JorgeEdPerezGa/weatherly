@@ -22937,7 +22937,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".body-visible {\n  display: flex;\n  height: 100%;\n  width: 100%;\n}\n\n.body-hidden {\n  display: none;\n}\n\n.app-container {\n  height: 100%;\n  width: 100%;\n  margin: 0;\n}\n\n@media (max-width: 900px) {\n  .body-visible {\n    flex-direction: column;\n  }\n}\n", ""]);
+	exports.push([module.id, ".body-visible {\n  display: flex;  \n  width: 100%;\n}\n\n.body-hidden {\n  display: none;\n}\n\n.app-container {\n  height: 100%;\n  width: 100%;\n  margin: 0;\n}\n\n@media (max-width: 900px) {\n  .body-visible {\n    flex-direction: column;\n  }\n}\n", ""]);
 	
 	// exports
 
@@ -22965,7 +22965,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".ten-day-container{\n  justify-content: space-between;\n  width: 50%;\n  background: black;\n  display: flex;\n  flex-direction: column;\n}\n\n.ten-day {\n  width: 60%;\n  margin: 0;\n  padding: 5px 0px 5px 15px;\n  color: #fff;\n  font-size: 22px;\n}\n\n.day-card {\n  padding-top: 40px;\n  display: flex;\n  flex: 1;\n  background-color: #000;\n  opacity: 0.8;\n}\n\n\n.icon {\n  height: 35px;\n  width: 35px;\n}\n\n.ten-day-icon {\n  display: flex;\n  justify-content: center;\n  width: 10%;\n  padding-left: 20px;\n}\n\n.day-high {\n  width: 10%;\n  margin: 0;\n  text-align: center;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  color: #47f5d2;\n  font-size: 20px;\n}\n\n.day-low {\n  width: 10%;\n  margin: 0;\n  text-align: center;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  color: #d1d3d6;\n  font-size: 18px;\n}\n\n@media (max-width: 900px) {\n  .ten-day-container {\n    width: 100%;\n    padding-bottom: 30px;\n    font-size: 18px;\n  }\n}\n", ""]);
+	exports.push([module.id, ".ten-day-container{\n  justify-content: space-between;\n  width: 50%;\n  background: black;\n  display: flex;\n  flex-direction: column;\n}\n\n.ten-day {\n  width: 40%;\n  margin: 0;\n  padding: 5px 0px 5px 15px;\n  color: #fff;\n  font-size: 22px;\n}\n\n.day-card {\n  padding-top: 40px;\n  display: flex;\n  flex: 1;\n  background-color: #000;\n  opacity: 0.8;\n}\n\n\n.icon {\n  height: 35px;\n  width: 35px;\n}\n\n.ten-day-icon {\n  display: flex;\n  justify-content: center;\n  width: 10%;\n  padding-left: 20px;\n}\n\n.day-high {\n  width: 15%;\n  margin: 0px 20px 0px 0px;\n  text-align: center;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  color: #47f5d2;\n  font-size: 20px;\n}\n\n.day-low {\n  width: 15%;\n  margin: 0;\n  text-align: center;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  color: #d1d3d6;\n  font-size: 18px;\n}\n\n@media (max-width: 900px) {\n  .ten-day-container {\n    width: 100%;\n    padding-bottom: 30px;\n    font-size: 18px;\n  }\n}\n", ""]);
 	
 	// exports
 
@@ -22993,7 +22993,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".hourly {\n  background: black;\n  opacity: .5;\n  display: flex;\n  width: 80%;\n  justify-content: space-evenly;\n  overflow-y: scroll;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.seven-hour-condition-box{\n  width: 140px;\n}\n\n.seven-hour-condition{\n  opacity: 1;\n  padding-left: 5px;\n  padding-right: 5px;\n}\n\n.seven-hour-temperature-icon {\n  color: #83ffea ;\n}\n", ""]);
+	exports.push([module.id, ".hourly {\n  background: #000;\n  opacity: .5;\n  display: flex;\n  width: 80%;\n  justify-content: space-evenly;\n  overflow-y: scroll;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.seven-hour-condition-box{\n  width: 140px;\n}\n\n.seven-hour-condition{\n  opacity: 1;\n  padding-left: 5px;\n  padding-right: 5px;\n}\n\n.seven-hour-temperature-icon {\n  color: #83ffea ;\n}\n", ""]);
 	
 	// exports
 
@@ -23352,7 +23352,6 @@
 	      var _this2 = this;
 	
 	      var objectData = this.props.currentObservation;
-	      console.log(objectData);
 	      if (!objectData) {
 	        return _react2.default.createElement('div', null);
 	      }
